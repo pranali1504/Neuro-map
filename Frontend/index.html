@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NeuroMap | Login</title>
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-body">
+
+  <!-- NAVBAR -->
+  <nav class="auth-navbar">
+    <div class="logo">🧠 NeuroMap</div>
+  </nav>
+<p id="logoutMessage" style="
+    display:none;
+    background:#e6ffed;
+    color:#1a7f37;
+    padding:10px;
+    border-radius:6px;
+    text-align:center;
+    margin-bottom:15px;">
+    ✔ Logged out successfully
+</p>
+
+
+  <!-- LOGIN CARD -->
+  <div class="auth-container">
+    <div class="auth-card">
+      <h2>Welcome back</h2>
+      <p>Login to continue your productivity journey</p>
+
+      <input type="email" id="email" placeholder="Email Address">
+      <input type="password" id="password" placeholder="Password">
+
+
+      <button onclick="login()">Login</button>
+          <p id="message"></p>
+      <p class="switch">
+        Don’t have an account?
+        <a href="signup.html">Sign up</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
